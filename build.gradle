@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+version = '1.0.0'
+group = 'com.voicebunny'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.8.6'
+    groovy group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.5.2'
+}
+
+uploadArchives {
+    repositories {
+        mavenLocal()
+    }
+}
