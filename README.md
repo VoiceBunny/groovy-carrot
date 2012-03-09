@@ -10,7 +10,7 @@ If you need more information on how to use our library check the [installation g
 import com.voicebunny.api.*
 
 // Initialize the library
-def vb = new VoiceBunny('userId', 'apiKey', 'https://api.voicebunny.com')
+def vb = new VoiceBunny('userId', 'token', 'https://api.voicebunny.com')
 
 // Get information
 def response = vb.languages
