@@ -30,8 +30,8 @@ response = vb.getProject(response.project.id)
 println response.projects
 ```
 
-### Request a VoiceBunny API Key
-To use this library you need to request an API Key in the [VoiceBunny.com Developer's Section](http://voicebunny.com/developers/token).
+### Request a VoiceBunny API Token
+To use this library you need to request an API Token in the [VoiceBunny.com Developer's Section](http://voicebunny.com/developers/token).
 
 ### Don't you like Groovy?
 If you're not confortable with the Groovy language, you can also check our other libraries:
