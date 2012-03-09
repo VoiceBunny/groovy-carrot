@@ -1,7 +1,7 @@
 # Groovy Carrot - VoiceBunny Library
 
-[Groovy Carrot](https://github.com/Voice123/groovy-carrot) is a Groovy library that provides connection to the [VoiceBunny.com](http://voicebunny.com) HTTP RESTful API, using [HTTP Builder](http://groovy.codehaus.org/HTTP+Builder) for the HTTP request/response cycle.
-If you need more information on how to use our library check the [installation guide](https://github.com/Voice123/groovy-carrot/wiki/installation) or the [tutorial](https://github.com/Voice123/groovy-carrot/wiki/Use-tutorial).
+[Groovy Carrot](https://github.com/VoiceBunny/groovy-carrot) is a Groovy library that provides connection to the [VoiceBunny.com](http://voicebunny.com) HTTP RESTful API, using [HTTP Builder](http://groovy.codehaus.org/HTTP+Builder) for the HTTP request/response cycle.
+If you need more information on how to use our library check the [installation guide](https://github.com/VoiceBunny/groovy-carrot/wiki/installation) or the [tutorial](https://github.com/VoiceBunny/groovy-carrot/wiki/Use-tutorial).
 
 ### Usage
 
