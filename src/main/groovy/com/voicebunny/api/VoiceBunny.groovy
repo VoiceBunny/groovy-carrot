@@ -71,6 +71,14 @@ class VoiceBunny {
         return http.post(path: 'reads/approve/' + readId, requestContentType: URLENC)
     }
 
+    def addRevision(readId, data){
+        return http.post(path: 'reads/' + readId + '/revision/add', body: data, requestContentType: URLENC)
+    }
+
+    def quoteRevision(readId, data){
+        return http.post(path: 'reads/' + readId + '/revision/quote', body: data, requestContentType: URLENC)
+    }
+
     def rejectRead(readId, data) {
         return http.post(path: 'reads/reject/' + readId, body: data, requestContentType: URLENC)
     }
