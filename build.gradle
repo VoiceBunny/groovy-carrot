@@ -2,7 +2,7 @@ apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-version = '1.0.1-SNAPSHOT'
+version = '1.1.0-SNAPSHOT'
 group = 'com.voicebunny'
 
 repositories {
@@ -11,14 +11,14 @@ repositories {
 }
 
 dependencies {
-    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.8.6'
+    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.8.+'
     compile group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version: '0.5.2'
 }
 
 uploadArchives {
     repositories {
         mavenDeployer {
-        	final url = project.version.endsWith("SNAPSHOT") ? snapshotRepo:  releaseRepo
+            final url = project.version.endsWith("SNAPSHOT") ? snapshotRepo:  releaseRepo
             repository(url: url)
         }
     }

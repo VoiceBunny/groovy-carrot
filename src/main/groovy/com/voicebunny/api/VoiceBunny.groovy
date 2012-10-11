@@ -16,12 +16,12 @@ import static groovyx.net.http.ContentType.*
 class VoiceBunny {
 
     def slurper = new JsonSlurper()
-	
-	def userId
-	
-	def token
-	
-	def http
+    
+    def userId
+    
+    def token
+    
+    def http
 
     VoiceBunny(userId, token, host) {
         this.userId = userId
@@ -34,14 +34,14 @@ class VoiceBunny {
 
     def success = {response, json ->
         def parsed = slurper.parseText(json.toString())
-    	return parsed
-	}
-	
-	def failure = {response, json ->
+        return parsed
+    }
+    
+    def failure = {response, json ->
         def parsed = slurper.parseText(json.toString())
         def error = parsed.error
         throw new VoiceBunnyException(error.code, error.message)
-	}
+    }
 
     def getProjects() {
         return http.get(path: 'projects/', requestContentType: URLENC)
@@ -52,7 +52,7 @@ class VoiceBunny {
     }
 
     def postProject(projectData) {
-		return http.post(path: 'projects/add', body: projectData, requestContentType: URLENC)
+        return http.post(path: 'projects/add', body: projectData, requestContentType: URLENC)
     }
 
     def disposeProject(projectId) {
