@@ -6,11 +6,13 @@ If you need more information on how to use our library check the [installation g
 ## Usage
 
 ```groovy
-// Imports
+@GrabResolver(name='voicebunny', root='https://github.com/VoiceBunny/mvn-repository/raw/master/releases')
+@Grab(group='com.voicebunny', module='groovy-carrot', version='1.1.0')
+
 import com.voicebunny.api.*
 
 // Initialize the library
-def vb = new VoiceBunny('0', 'xxxxXXXXxxxx', 'https://api.voicebunny.com')
+def vb = new VoiceBunny('yourUserId', 'yourToken', 'https://api.voicebunny.com')
 
 // Get information
 def response = vb.languages
